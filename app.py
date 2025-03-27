@@ -32,7 +32,7 @@ async def predict(data: ImageInput):
         
       
         prediction = model.predict(input_image)
-        predicted_label = np.argmax(prediction)  y
+        predicted_label = np.argmax(prediction)
 
         return {"prediction": int(predicted_label)}
     except Exception as e:
